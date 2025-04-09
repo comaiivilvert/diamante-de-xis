@@ -4,29 +4,31 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("Vamos desenhar um Diamante!");
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("Para isso, vamos precisar que digite um numero inteiro e ímpar:");
-            
-            int numeroDiamante = int.Parse(Console.ReadLine());
+            Console.WriteLine("---------------------------------------------------------------");
+            int numeroDiamante = Convert.ToInt32(Console.ReadLine());
 
-            while(true)
+            int numeroImpar = ValidaSeEhImpar(numeroDiamante);
+           
+            Console.ReadLine();   
+
+        }
+
+
+
+        static int ValidaSeEhImpar(int numeroDiamante)
+        {
+           
+            while (numeroDiamante % 2 == 0 || numeroDiamante < 2)
             {
-                if (numeroDiamante % 2 != 0)
-                {
-                    Console.WriteLine("OK!! Número ímpar!!");
-
-                }
-                else
-                {
-                    Console.WriteLine("Numero invalido!! Digite um novo número ímpar: ");
-                    numeroDiamante = int.Parse(Console.ReadLine());
-                }
-                
-                Console.ReadLine();
-
+                Console.WriteLine("Numero invalido! Digite novo número");
+                numeroDiamante = Convert.ToInt32(Console.ReadLine());
             }
-
+            return numeroDiamante;
+            
         }
     }
 }
