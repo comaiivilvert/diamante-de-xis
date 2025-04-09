@@ -57,7 +57,26 @@
                 Console.WriteLine();
             }
 
-           
+            //parte de baixo do diamante
+            for (int i = metade -1; i >= 0; i--)
+            {
+                int espacos = metade - i;
+                int asteriscos = i * 2 + 1;
+
+                //imprime os espaços em branco
+                for (int j = 0; j < espacos; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                //imprime os asteriscos *
+                for (int j = 0; j < asteriscos; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
 
 
         }
