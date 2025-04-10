@@ -1,5 +1,7 @@
 # Diamante de X
 
+![](https://imgur.com/twcRj0Y.gif)
+
 ## Intrudução
 
 O usuário digitará a escala de tamanho do diamante que será criado pelo código.
